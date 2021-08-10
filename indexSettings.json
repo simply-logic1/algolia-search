@@ -1,0 +1,142 @@
+{
+  "settings": {
+    "minWordSizefor1Typo": 4,
+    "minWordSizefor2Typos": 8,
+    "hitsPerPage": 20,
+    "maxValuesPerFacet": 100,
+    "searchableAttributes": [
+      "unordered(title)",
+      "unordered(description)",
+      "unordered(streams_included)",
+      "unordered(url)",
+      "unordered(content.published)"
+    ],
+    "numericAttributesToIndex": null,
+    "attributesToRetrieve": null,
+    "ignorePlurals": ["en"],
+    "advancedSyntax": true,
+    "removeStopWords": ["en"],
+    "unretrievableAttributes": null,
+    "optionalWords": [],
+    "queryLanguages": ["en"],
+    "attributesForFaceting": ["featured", "hidden", "streams_included", "type"],
+    "attributesToSnippet": null,
+    "attributesToHighlight": null,
+    "paginationLimitedTo": 1000,
+    "attributeForDistinct": null,
+    "exactOnSingleWordQuery": "attribute",
+    "ranking": [
+      "typo",
+      "geo",
+      "words",
+      "filters",
+      "proximity",
+      "attribute",
+      "exact",
+      "custom"
+    ],
+    "customRanking": ["desc(title)", "desc(description)"],
+    "separatorsToIndex": "",
+    "removeWordsIfNoResults": "allOptional",
+    "queryType": "prefixLast",
+    "highlightPreTag": "<em>",
+    "highlightPostTag": "</em>",
+    "snippetEllipsisText": "",
+    "alternativesAsExact": ["ignorePlurals", "singleWordSynonym"],
+    "enablePersonalization": true,
+    "indexLanguages": ["en"]
+  },
+  "rules": [
+    {
+      "_metadata": {
+        "lastUpdate": 1577836800
+      },
+      "enabled": true,
+      "description": "Replace query \"software as a service\" and \"software-as-a-service\" by \"saas\" ",
+      "condition": {
+        "pattern": "software-as-a-service",
+        "anchoring": "contains",
+        "alternatives": true
+      },
+      "consequence": {
+        "params": {
+          "query": "saas"
+        }
+      },
+      "objectID": "qr-1579177216163-411"
+    },
+    {
+      "_metadata": {
+        "lastUpdate": 1577836800
+      },
+      "enabled": true,
+      "description": "Replace query \"software as a service\" and \"software-as-a-service\" by \"saas\" ",
+      "condition": {
+        "pattern": "software as a service",
+        "anchoring": "contains",
+        "alternatives": true
+      },
+      "consequence": {
+        "params": {
+          "query": "saas"
+        }
+      },
+      "objectID": "qr-1579177216163-410"
+    },
+    {
+      "_metadata": {
+        "lastUpdate": 1577836800
+      },
+      "enabled": true,
+      "description": "Replace query \"technology\" by \"saas\" ",
+      "condition": {
+        "pattern": "technology",
+        "anchoring": "contains",
+        "alternatives": true
+      },
+      "consequence": {
+        "params": {
+          "query": "saas"
+        }
+      },
+      "objectID": "qr-1579177141875-350"
+    },
+    {
+      "_metadata": {
+        "lastUpdate": 1577836800
+      },
+      "enabled": true,
+      "description": "Replace query \"Case studies\" by \"customer story\" ",
+      "condition": {
+        "pattern": "case studies",
+        "anchoring": "contains",
+        "alternatives": true
+      },
+      "consequence": {
+        "params": {
+          "query": "customer story"
+        }
+      },
+      "objectID": "qr-1579177109339-290"
+    },
+    {
+      "_metadata": {
+        "lastUpdate": 1577836800
+      },
+      "enabled": true,
+      "description": "Replace query \"Case studies\" by \"customer stories\" ",
+      "condition": {
+        "pattern": "case study",
+        "anchoring": "contains",
+        "alternatives": true
+      },
+      "consequence": {
+        "params": {
+          "query": "customer stories"
+        }
+      },
+      "objectID": "qr-1579172498776-170"
+    }
+  ],
+  "synonyms": []
+}
