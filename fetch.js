@@ -61,7 +61,7 @@ function fetchWithRetry(url, options, retryCount = 0) {
   });
 }
 
-client
+/*client
   .copyIndex(process.env.ALGOLIA_INDEX, process.env.ALGOLIA_INDEX_COPY)
   .then(() => {
     log(
@@ -71,7 +71,7 @@ client
     index.clearObjects();
     log("Index cleared");
   })
-  .catch((err) => console.log("err 1", err));
+  .catch((err) => console.log("err 1", err));*/
 
 const promises = targetStreamId.map((stream) => {
   const fetchItemsPromise = fetchWithRetry(
@@ -135,6 +135,7 @@ const promises = targetStreamId.map((stream) => {
       )
       .wait()
       .then(() => {
+		  //console.log(result);
         return result;
       })
       .catch((err) => console.log("err 3", err));
@@ -161,6 +162,7 @@ const promises = targetStreamId.map((stream) => {
       method: "GET",
     })
       .then((response) => {
+		  //console.log(response.json());
         return response.json();
       })
       .then((result) => {
@@ -178,7 +180,9 @@ const promises = targetStreamId.map((stream) => {
 
   return fetchItemsPromise
     .then((response) => {
+		//console.log(response.json());
       return response.json();
+	  
     })
     .then((result) => {
       if (result && result.meta && result.meta.next_page) {
