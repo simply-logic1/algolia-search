@@ -1,106 +1,27 @@
 [
   {
-    "id": 5435722,
-    "title": "Ebooks"
-  },
+    "id": 8159759,
+    "title": "Trusaic"
+  },  
   {
-    "id": 5382837,
-    "title": "Reports"
-  },
-  {
-    "id": 5382840,
-    "title": "Customer stories"
-  },
-  {
-    "id": 5382843,
-    "title": "Webinars"
-  },
-  {
-    "id": 5382846,
-    "title": "Guides"
-  },
-  {
-    "id": 5382849,
+    "id": 7937446,
     "title": "Videos"
   },
   {
-    "id": 5553336,
-    "title": "Infographics"
+    "id": 7901506,
+    "title": "Pay Data Reporting"
   },
   {
-    "id": 5867752,
-    "title": "Blog posts"
+    "id": 5414898,
+    "title": "Tax Credit"
   },
   {
-    "id": 6264762,
-    "title": "Discover Algolia"
+    "id": 4829806,
+    "title": "HR data quality"
   },
   {
-    "id": 6264768,
-    "title": "Build 101"
-  },
-  {
-    "id": 6264771,
-    "title": "Build 201"
-  },
-  {
-    "id": 6264795,
-    "title": "For Magento 2"
-  },
-  {
-    "id": 5382774,
-    "title": "Analytics"
-  },
-  {
-    "id": 5382777,
-    "title": "Merchandising"
-  },
-  {
-    "id": 5382783,
-    "title": "UI Libraries"
-  },
-  {
-    "id": 5382786,
-    "title": "Personalization"
-  },
-  {
-    "id": 5382789,
-    "title": "Crawler"
-  },
-  {
-    "id": 5382780,
-    "title": "A/B testing"
-  },
-  {
-    "id": 5382798,
-    "title": "Voice Search (feature)"
-  },
-  {
-    "id": 5377701,
-    "title": "Ecommerce"
-  },
-  {
-    "id": 5377704,
-    "title": "Media"
-  },
-  {
-    "id": 5377707,
-    "title": "Technology"
-  },
-  {
-    "id": 5393094,
-    "title": "Mobile search"
-  },
-  {
-    "id": 5393097,
-    "title": "Site search"
-  },
-  {
-    "id": 5393121,
-    "title": "Federated search"
-  },
-  {
-    "id": 5393115,
-    "title": "Voice search (use case)"
+    "id": 4637329,
+    "title": "Resources"
   }
+ 
 ]
